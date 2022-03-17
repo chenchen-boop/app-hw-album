@@ -1,20 +1,22 @@
 import React from "react";
-import { SafeAreaView, StatusBar, Text, FlatList } from "react-native";
+import { StyleSheet, StatusBar, SafeAreaView } from "react-native";
 import Header from "./src/components/Header";
-import albumData from "./src/json/albums.json";
+import AlbumList from "./src/components/AlbumList";
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <StatusBar />
-      <Header title={albumData.albumTitle}/>
-      <FlatList
-        data={albumData.albumList}
-        renderItem={({ item }) => <Text>{item.title}</Text>}
-        keyExtractor={item => item.title}
-      />
+      <Header />
+      <AlbumList />
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default App;
