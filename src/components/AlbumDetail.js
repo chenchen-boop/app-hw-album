@@ -1,15 +1,15 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Pressable, Linking} from "react-native";
+import { StyleSheet, Text, View, Image} from "react-native";
 
-const AlbumDetail = ({ album }) => {
+const AlbumDetail = props => {
+   let { album } = props;
    return (
       <View style={styles.cardContainerStyle}>
-        <View style={[styles.thumbnailContainerStyle, styles.cardSectionStyle]}>
+        <View style={[styles.thumbnailContainerStyle, 
+                      styles.cardSectionStyle]}>
           <Image
             style={styles.thumbnailStyle}
-            source={{
-              uri: album.thumbnail_image
-            }}
+            source={{uri: album.thumbnail_image}}
           />
           <View style={styles.headerContentStyle}>
             <Text>{album.title}</Text>
@@ -17,17 +17,11 @@ const AlbumDetail = ({ album }) => {
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
-          <Pressable 
-              onPress={() => Linking.openURL(album.url)}
-          >
-            <Image
-              style={styles.imageStyle}
-              source={{
-                uri: album.image
-              }}
-            />
-          </Pressable>
-        </View>   
+          <Image
+            style={styles.imageStyle}
+            source={{uri: album.image}}
+          />
+        </View>
       </View>
   )};
 
