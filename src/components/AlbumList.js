@@ -2,6 +2,8 @@ import React from "react";
 import { Text, FlatList, SectionList, StyleSheet } from "react-native";
 import AlbumDetail from "./AlbumDetail";
 import HotAlbumDetail from "./HotAlbumDetail";
+import NewAlbumDetail from "./NewAlbumDetail";
+
 import sections from "../json/album_section.json";
 
 const Albumlist = () => {
@@ -16,9 +18,12 @@ const Albumlist = () => {
           showsHorizontalScrollIndicator={false}
           keyExtractor={ item => item.title }
         />
+        
       ) : null}
     </>
   );
+  
+
   const renderItem = ({ item, section }) => {
     if (section.horizontal) {
       return null;
