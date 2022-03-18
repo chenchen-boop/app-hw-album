@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Button, Linking} from "react-native";
+import { StyleSheet, Text, View, Image, Pressable, Linking} from "react-native";
 
 const AlbumDetail = ({ album }) => {
    return (
@@ -17,18 +17,17 @@ const AlbumDetail = ({ album }) => {
           </View>
         </View>
         <View style={styles.cardSectionStyle}>
-          <Image
-            style={styles.imageStyle}
-            source={{
-              uri: album.image
-            }}
-          />
-        </View>
-        <Button 
-          onPress={() => Linking.openURL(album.url)}
-          title="More Detail"
-          color="gray"
-        />      
+          <Pressable 
+              onPress={() => Linking.openURL(album.url)}
+          >
+            <Image
+              style={styles.imageStyle}
+              source={{
+                uri: album.image
+              }}
+            />
+          </Pressable>
+        </View>   
       </View>
   )};
 
