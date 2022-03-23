@@ -7,24 +7,59 @@ import HomeScreen from './src/screens/Home';
 
 
 const Stack = createNativeStackNavigator();
-//const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
+
+const HomeStack=createNativeStackNavigator();
+
+function HomeStackScreen() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Home" component={HomeScreen}  />
+      <HomeStack.Screen name="Details" component={NewDetailScreen} />
+    </HomeStack.Navigator>
+  );
+}
+
+
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: 'Home' }}
-        />
-        <Stack.Screen 
-          name="NewDetail"
-          component={NewDetailScreen}
-          options={{ title: 'detail' }} 
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <Stack.Navigator>
+    //     <Stack.Screen
+    //       name="Home"
+    //       component={HomeScreen}
+    //       options={{ title: 'Home' }}
+    //     />
+    //     <Stack.Screen 
+    //       name="NewDetail"
+    //       component={NewDetailScreen}
+    //       options={{ title: 'detail' }} 
+    //     />
+    //   </Stack.Navigator>
+
+      
+    // </NavigationContainer>
+
+<NavigationContainer>
+    <Tab.Navigator>
+    <Tab.Screen
+      name="Home"
+      component={HomeStackScreen}
+      options={{ title: 'Home' }}
+    />
+    <Tab.Screen 
+      name="NewDetail"
+      component={NewDetailScreen}
+      options={{ title: 'detail' }} 
+    />
+    </Tab.Navigator>
+</NavigationContainer>
+
+  
+  
+  
+
     
   );
 }
