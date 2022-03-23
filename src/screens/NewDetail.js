@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, StatusBar, SafeAreaView ,Text,View} from "react-native";
-import Detail from "../json/albums_detail.json";
+//import Detail from "../json/albums_detail.json";
 
 const NewDetail= ()=>{
     return(
