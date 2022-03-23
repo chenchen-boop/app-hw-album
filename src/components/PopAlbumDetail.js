@@ -1,17 +1,31 @@
 import React from "react";
-import { StyleSheet, Text, View, Image} from "react-native";
+import { StyleSheet, Text, View, Image,Pressable} from "react-native";
+import { Linking } from "react-native-web";
+import { useNavigation } from '@react-navigation/native';
 
-const NewAlbumDetail = props => {
+
+const PopAlbumDetail =(props ) => {
    let { album } = props;
+   const navigation = useNavigation();
    return (
+     
+   
      <View style={{flexDirection: 'column'}}>
       <View style={styles.cardContainerStyle}>
         <View style={styles.cardSectionStyle}>
-        
+
+          
+      
+
+        <Pressable onPress={()=>navigation.navigate('NewDetail')}>
           <Image
-            style={styles.imageStyle}
-            source={{uri: album.image}}
-          />
+              style={styles.imageStyle}
+              source={{uri: album.image}}
+            />
+        </Pressable>
+            
+          
+        
         </View>
       </View>  
       <View style={styles.headerContainerStyle}>
@@ -64,4 +78,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default NewAlbumDetail;
+export default PopAlbumDetail;

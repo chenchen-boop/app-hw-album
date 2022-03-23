@@ -1,22 +1,28 @@
-import React from "react";
-import { StyleSheet, StatusBar, SafeAreaView } from "react-native";
-import Header from "./src/components/Header";
-import AlbumList from "./src/components/AlbumList";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import  NewDetailScreen  from './src/screens/NewDetail';
+//import Navigator from './route/homeStack'
+
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar />
-      <Header />
-      <AlbumList />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: 'Home' }}
+        />
+        <Stack.Screen 
+          name="NewDetail"
+          component={NewDetailScreen}
+          options={{ title: 'detail' }} 
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+    
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
+}
 export default App;
