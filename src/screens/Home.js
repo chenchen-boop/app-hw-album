@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar />
-      <Header /> 
+       <Header /> 
       <AlbumList/>
        
     </SafeAreaView>

@@ -5,6 +5,8 @@ import  NewDetailScreen  from './src/screens/NewDetail';
 import HomeScreen from './src/screens/Home';
 import MyBooksScreen from './src/screens/MyBooks';
 import WishListScreen from './src/screens/WishList';
+import Icon from 'react-native-vector-icons/FontAwesome'
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 //import Navigator from './route/homeStack'
 
 
@@ -21,6 +23,7 @@ function HomeStackScreen() {
     </HomeStack.Navigator>
   );
 }
+
 
 
 
@@ -43,23 +46,36 @@ const App = () => {
       
     // </NavigationContainer>
 
+
+  
+
+
+
+
+
 <NavigationContainer>
     <Tab.Navigator>
+
+
+
     <Tab.Screen
       name="Home"
       component={HomeStackScreen}
-      options={{ title: 'Home' }}
+      options={{  title:'Home',
+                  tabBarIcon: ({size='18', color='333'}) => (<Icon name={"home"} color={color} size={size}/>)}}
     />
     <Tab.Screen 
       name="MyBooks"
       component={MyBooksScreen}
-      options={{ title: 'MyBooks' }} 
+      options={{ title: 'MyBooks' ,
+                tabBarIcon: ({size='18', color='333'}) => (<Icon name={"bookmark"} color={color} size={size}/>)}} 
     />
     
     <Tab.Screen 
       name=" WishList"
       component={ WishListScreen}
-      options={{ title: ' WishList' }} 
+      options={{ title: ' WishList' , 
+                 tabBarIcon: ({size='18', color='333'}) => (<MaterialCommunityIcons name={"book-open"} color={color} size={size}/>)}}  
     />
     </Tab.Navigator>
 </NavigationContainer>
