@@ -3,6 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import  NewDetailScreen  from './src/screens/NewDetail';
 import HomeScreen from './src/screens/Home';
+import MyBooksScreen from './src/screens/MyBooks';
+import WishListScreen from './src/screens/WishList';
 //import Navigator from './route/homeStack'
 
 
@@ -49,9 +51,15 @@ const App = () => {
       options={{ title: 'Home' }}
     />
     <Tab.Screen 
-      name="NewDetail"
-      component={NewDetailScreen}
-      options={{ title: 'detail' }} 
+      name="MyBooks"
+      component={MyBooksScreen}
+      options={{ title: 'MyBooks' }} 
+    />
+    
+    <Tab.Screen 
+      name=" WishList"
+      component={ WishListScreen}
+      options={{ title: ' WishList' }} 
     />
     </Tab.Navigator>
 </NavigationContainer>

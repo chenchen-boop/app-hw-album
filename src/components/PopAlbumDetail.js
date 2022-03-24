@@ -4,6 +4,7 @@ import { Linking } from "react-native-web";
 import { useNavigation } from '@react-navigation/native';
 
 
+
 const PopAlbumDetail =(props ) => {
    let { album } = props;
    const navigation = useNavigation();
@@ -17,7 +18,7 @@ const PopAlbumDetail =(props ) => {
           
       
 
-        <Pressable onPress={()=>navigation.navigate('NewDetail')}>
+        <Pressable onPress={()=>navigation.navigate('Details')}>
           <Image
               style={styles.imageStyle}
               source={{uri: album.image}}
