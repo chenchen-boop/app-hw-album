@@ -8,7 +8,9 @@ const Header = () => {
   return (
       <View style={styles.headerStyle}>
         <MaterialCommunityIcons  name='menu'/>
-        <Text style={styles.textStyle}>Albums</Text>
+        <Icon  name='search'/>
+
+        {/* <Text style={styles.textStyle}>Albums</Text> */}
         
       </View>
   );
