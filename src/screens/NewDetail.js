@@ -9,11 +9,15 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 
-
-
 const NewDetail= ()=>{
-    var color=333;
+    let color='gray';
     const navigation = useNavigation();
+
+    const [toggle, setToggle] = useState(true);
+    const toggleFunction = () => {
+        setToggle(!toggle);
+    };
+  
     //const [selected, setSelected] = useState(false);
     return(
         <View style={styles.headerStyle}>
@@ -22,11 +26,25 @@ const NewDetail= ()=>{
             <Pressable  onPress={()=>navigation.navigate('Home')}>
                 <Ionicons name="chevron-back" size={24} color="black" />
             </Pressable>
-             <Pressable onPress={()=>{color?'#7879F1':'#7879F1'}}>
+            <Pressable onPress={() => toggleFunction()}>
+                {toggle ? <MaterialCommunityIcons name={'bookmark'} color={'black'} size={26} />:
+                            <MaterialCommunityIcons name={'bookmark'} color={'#6200EE'} size={26} />}
+            
+            </Pressable>
+
+
+
+
+
+
+             {/* <Pressable onPress={()=>{  if(color=='gray')color='#7879F1';
+                                        else color='gray'
+                                    }
+                                }>
                 <Icon name={"bookmark"} color={color} size={18}/>
                 <Text>{color}</Text>
 
-            </Pressable> 
+            </Pressable>  */}
             
            {/* <Pressable  
                 style={({pressed}) => [
