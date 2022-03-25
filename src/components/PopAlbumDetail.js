@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, Image,Pressable} from "react-native";
 import { Linking } from "react-native-web";
 import { useNavigation } from '@react-navigation/native';
+import CreateStar from './CreateStar'; 
 
 
 const PopAlbumDetail =(props ) => {
@@ -29,6 +30,7 @@ const PopAlbumDetail =(props ) => {
         </View>
       </View>  
       <View style={styles.headerContainerStyle}>
+        <CreateStar/>
         <Text style={styles.headerTitleStyle}>{album.title}</Text>
         <Text style={styles.headerContentStyle}>{album.artist}</Text>
       </View>   
