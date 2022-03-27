@@ -5,6 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import CreateStar from './CreateStar'; 
 
 
+
 const PopAlbumDetail =(props ) => {
    let { album } = props;
    const navigation = useNavigation();
@@ -30,7 +31,7 @@ const PopAlbumDetail =(props ) => {
         </View>
       </View>  
       <View style={styles.headerContainerStyle}>
-        <CreateStar/>
+        <CreateStar album={album}/>
         <Text style={styles.headerTitleStyle}>{album.title}</Text>
         <Text style={styles.headerContentStyle}>{album.artist}</Text>
       </View>   
