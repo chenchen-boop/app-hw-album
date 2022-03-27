@@ -21,29 +21,7 @@ const CreateStar=(props)=>{
     };
 
 
-
-
     
-    // return(
-
-
-    //     //<Text>STAR</Text>
-    //     // for( i=0;i<star;i++){
-    //     //     <FontAwesome name="star" size={24} color="red" />      
-    //     // };
-    //     // for( i=0;i<5-star;i++){
-    //     //     <FontAwesome name="star" size={24} color="black" /> 
-    //     // };
-       
-    
-        
-    //         // {/* <View>
-    //         //     <FontAwesome name="star" size={24} color="black" />
-    //         //     <FontAwesome name="star" size={24} color="red" />
-    //         // </View> */}
-    // );
-
-    // return(<Text>{Star}</Text>)
     switch (Star){
             case "0":return(<Text><Blackstar/><Blackstar/><Blackstar/><Blackstar/><Blackstar/></Text>);
             case "1":return(<Text><Redstar/><Blackstar/><Blackstar/><Blackstar/><Blackstar/></Text>);

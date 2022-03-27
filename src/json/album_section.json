@@ -8,7 +8,6 @@
        "artist": "Dana Thomas",
        "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
        "image": "https://chenchen-boop.github.io/app-hw-album-images/fashion.png",
-       "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
        "descriptions": "Taylor Swift has been enhanced by the addition of 3 brand new tracks (\"I'm Only Me When I'm With You\", \"Invisible\", \"A Perfectly Good Heart\") and a pop version of the hit single \"Teardrops On My Guitar\"."
      
        },
@@ -17,7 +16,7 @@
           "artist": "Patrick Mauries",
           "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
           "image": "https://chenchen-boop.github.io/app-hw-album-images/chanel.png",
-          "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+          
           "descriptions": "Taylor Swift has been enhanced by the addition of 3 brand new tracks (\"I'm Only Me When I'm With You\", \"Invisible\", \"A Perfectly Good Heart\") and a pop version of the hit single \"Teardrops On My Guitar\"."
          
        },
@@ -26,7 +25,7 @@
           "artist": "June & Lucy",
           "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
           "image": "https://chenchen-boop.github.io/app-hw-album-images/modern.png",
-          "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+          
           "descriptions": "Taylor Swift has been enhanced by the addition of 3 brand new tracks (\"I'm Only Me When I'm With You\", \"Invisible\", \"A Perfectly Good Heart\") and a pop version of the hit single \"Teardrops On My Guitar\"."
          
        }
@@ -42,7 +41,7 @@
             "artist": "Suzy Menkes",
             "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
             "image": "https://chenchen-boop.github.io/app-hw-album-images/ysl.png",
-            "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+            
             "descriptions": "Taylor Swift has been enhanced by the addition of 3 brand new tracks (\"I'm Only Me When I'm With You\", \"Invisible\", \"A Perfectly Good Heart\") and a pop version of the hit single \"Teardrops On My Guitar\".",
             "star":"4"
          },
@@ -51,7 +50,7 @@
             "artist": "Rudolf Koch",
             "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
             "image": "https://chenchen-boop.github.io/app-hw-album-images/thebookofsigns.png",
-            "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+           
             "descriptions": "Taylor Swift has been enhanced by the addition of 3 brand new tracks (\"I'm Only Me When I'm With You\", \"Invisible\", \"A Perfectly Good Heart\") and a pop version of the hit single \"Teardrops On My Guitar\".",
             "star":"3"
          },
@@ -60,7 +59,7 @@
             "artist":"Tansy E.Hoskins",
             "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
             "image": "https://chenchen-boop.github.io/app-hw-album-images/stitched.png",
-            "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
+            
             "descriptions": "Taylor Swift has been enhanced by the addition of 3 brand new tracks (\"I'm Only Me When I'm With You\", \"Invisible\", \"A Perfectly Good Heart\") and a pop version of the hit single \"Teardrops On My Guitar\".",
             "star":"3"
          }

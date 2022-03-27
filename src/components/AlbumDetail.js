@@ -26,15 +26,7 @@ const AlbumDetail = props => {
   )};
 
 const styles = StyleSheet.create({
-  thumbnailContainerStyle: {
-    flexDirection: "row",
-    justifyContent: "flex-start"
-  },
-  thumbnailStyle: {
-    height: 50,
-    width: 50,
-    margin: 5
-  },
+  
   headerContentStyle: {
     flexDirection: "column",
     justifyContent: "space-around",
