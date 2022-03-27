@@ -9,6 +9,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import Albumlist from '../components/AlbumDetail';
 import PopAlbumDetail from '../components/PopAlbumDetail';
+import CreateStar from '../components/CreateStar';
 
 
 const NewDetail= ()=>{
@@ -54,7 +55,9 @@ const NewDetail= ()=>{
                         source={{uri:detail.data.image}}/>
                     <Text>{detail.data.title}</Text>
                     <Text>{detail.data.artist}</Text>
+                    <CreateStar album={detail.data}/>
                     <Text>{detail.data.descriptions}</Text>
+                    <Button title='BUY NOW FOR $46.99'></Button>
 
                     
             </View>        
