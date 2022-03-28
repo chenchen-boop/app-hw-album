@@ -37,29 +37,6 @@ function HomeStackScreen() {
 
 const App = () => {
   return (
-    // <NavigationContainer>
-    //   <Stack.Navigator>
-    //     <Stack.Screen
-    //       name="Home"
-    //       component={HomeScreen}
-    //       options={{ title: 'Home' }}
-    //     />
-    //     <Stack.Screen 
-    //       name="NewDetail"
-    //       component={NewDetailScreen}
-    //       options={{ title: 'detail' }} 
-    //     />
-    //   </Stack.Navigator>
-
-      
-    // </NavigationContainer>
-
-
-  
-
-
-
-
 
 <NavigationContainer>
     <Tab.Navigator>

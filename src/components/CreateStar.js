@@ -10,13 +10,13 @@ const CreateStar=(props)=>{
 
     const Redstar=()=>{
         return(
-             <FontAwesome name="star" size={24} color="red" />
+             <FontAwesome name="star" size={24} color="#FFC41F"  />
         );
        
     };
     const Blackstar=()=>{
         return(
-            <FontAwesome name="star" size={24} color="black" />
+            <FontAwesome name="star" size={24} color="#EDEDEF" />
        );
     };
 
@@ -26,7 +26,7 @@ const CreateStar=(props)=>{
             case "0":return(<Text><Blackstar/><Blackstar/><Blackstar/><Blackstar/><Blackstar/></Text>);
             case "1":return(<Text><Redstar/><Blackstar/><Blackstar/><Blackstar/><Blackstar/></Text>);
             case "2":return(<Text><Redstar/><Redstar/><Blackstar/><Blackstar/><Blackstar/></Text>);
-            case "3":return(<Text><Redstar/><Redstar/><Redstar/><Blackstar/><Blackstar/></Text>);
+            case "3":return(<Text ><Redstar/><Redstar/><Redstar/><Blackstar/><Blackstar/></Text>);
             case "4":return(<Text><Redstar/><Redstar/><Redstar/><Redstar/><Blackstar/></Text>);
             case "5":return(<Text><Redstar/><Redstar/><Redstar/><Redstar/><Redstar/></Text>);
             default :return(null);
@@ -40,4 +40,16 @@ const CreateStar=(props)=>{
 
 
 };
+
+const styles = StyleSheet.create({
+    prStyle:{
+        marginRight:50,
+    }
+
+});
+
+
+
+
+
 export default CreateStar;

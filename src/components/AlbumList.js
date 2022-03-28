@@ -22,6 +22,7 @@ const Albumlist = () => {
 
           horizontal={true}
           showsHorizontalScrollIndicator={false}
+        
         />
         
       ) : null}
@@ -39,13 +40,13 @@ const Albumlist = () => {
 
 
   return (
-    <SectionList 
+    <SectionList style={{height:1000}}
       sections={sections}
       renderSectionHeader={renderSectionHeader}
       renderItem={renderItem}
       keyExtractor={ item => item.title }
 
-      contentContainerStyle={{ paddingHorizontal: 10 }}
+      contentContainerStyle={{ paddingHorizontal: 10 ,paddingBottom:60 }}
       stickySectionHeadersEnabled={false}
       showsHorizontalScrollIndicator={false}
 
@@ -56,12 +57,15 @@ const Albumlist = () => {
 
 const styles = StyleSheet.create({
   sectionHeader: {
-    fontWeight: '600',
-    fontSize: 18,
+    fontWeight: '700',
+    fontSize: 24,
     paddingTop: 20,
     paddingBottom: 5,
     paddingLeft: 10,
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
+    fontFamily: 'Roboto',
+    fontStyle: 'normal',
+    color: '#131313',
   },
 })
 

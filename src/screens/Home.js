@@ -10,7 +10,7 @@ const Home = () => {
     <SafeAreaView style={styles.container}>
       <StatusBar />
        <Header /> 
-      <AlbumList/>
+      <AlbumList />
        
     </SafeAreaView>
   );
@@ -19,7 +19,13 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor:'#FFFFFF',
+  
+    
+    // paddingBottom:159,
+    
   },
+ 
 });
 
 export default Home;
